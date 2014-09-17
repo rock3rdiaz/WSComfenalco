@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws.wscomfenalco.com/" xmlns:ns1="http://jaxb.dev.java.net/array" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.wscomfenalco.com/">
+
+<xs:import namespace="http://jaxb.dev.java.net/array" schemaLocation="http://localhost:8080/onlineComfenalco/onlineComfenalco?xsd=2"/>
+
+<xs:element name="changePassword" type="tns:changePassword"/>
+
+<xs:element name="changePasswordResponse" type="tns:changePasswordResponse"/>
+
+<xs:element name="getAllEmployeesByNITCompany" type="tns:getAllEmployeesByNITCompany"/>
+
+<xs:element name="getAllEmployeesByNITCompanyResponse" type="tns:getAllEmployeesByNITCompanyResponse"/>
+
+<xs:element name="getDetailStatisticsByFovis" type="tns:getDetailStatisticsByFovis"/>
+
+<xs:element name="getDetailStatisticsByFovisResponse" type="tns:getDetailStatisticsByFovisResponse"/>
+
+<xs:element name="getPayments" type="tns:getPayments"/>
+
+<xs:element name="getPaymentsResponse" type="tns:getPaymentsResponse"/>
+
+<xs:element name="getStatisticsByFovis" type="tns:getStatisticsByFovis"/>
+
+<xs:element name="getStatisticsByFovisResponse" type="tns:getStatisticsByFovisResponse"/>
+
+<xs:element name="getStatisticsByInputAndSubsidy" type="tns:getStatisticsByInputAndSubsidy"/>
+
+<xs:element name="getStatisticsByInputAndSubsidyResponse" type="tns:getStatisticsByInputAndSubsidyResponse"/>
+
+<xs:element name="getStatisticsBySex" type="tns:getStatisticsBySex"/>
+
+<xs:element name="getStatisticsBySexResponse" type="tns:getStatisticsBySexResponse"/>
+
+<xs:element name="getStatisticsCategoriesByCompany" type="tns:getStatisticsCategoriesByCompany"/>
+
+<xs:element name="getStatisticsCategoriesByCompanyResponse" type="tns:getStatisticsCategoriesByCompanyResponse"/>
+
+<xs:element name="getStatisticsEmployeeByAge" type="tns:getStatisticsEmployeeByAge"/>
+
+<xs:element name="getStatisticsEmployeeByAgeResponse" type="tns:getStatisticsEmployeeByAgeResponse"/>
+
+<xs:element name="vTrabajadores" type="tns:vTrabajadores"/>
+
+<xs:element name="validation" type="tns:validation"/>
+
+<xs:element name="validationResponse" type="tns:validationResponse"/>
+
+<xs:complexType name="getPayments">
+<xs:sequence>
+<xs:element name="nitCompany" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPaymentsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStatisticsBySex">
+<xs:sequence>
+<xs:element name="nitCompany" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStatisticsBySexResponse">
+<xs:sequence>
+<xs:element name="return" type="ns1:anyTypeArray" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStatisticsByInputAndSubsidy">
+<xs:sequence>
+<xs:element name="nitCompany" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStatisticsByInputAndSubsidyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllEmployeesByNITCompany">
+<xs:sequence>
+<xs:element name="nitCompany" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllEmployeesByNITCompanyResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:vTrabajadores" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="vTrabajadores">
+<xs:sequence>
+<xs:element name="anoMesBloqueo" type="xs:string" minOccurs="0"/>
+<xs:element name="apellido1" type="xs:string" minOccurs="0"/>
+<xs:element name="apellido2" type="xs:string" minOccurs="0"/>
+<xs:element name="areasectortrb" type="xs:string" minOccurs="0"/>
+<xs:element name="categoria" type="xs:string" minOccurs="0"/>
+<xs:element name="consenovedtra" type="xs:string" minOccurs="0"/>
+<xs:element name="identificacion" type="xs:string" minOccurs="0"/>
+<xs:element name="keyTrbCtvo" type="xs:string" minOccurs="0"/>
+<xs:element name="nivelsectortrb" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre1" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre2" type="xs:string" minOccurs="0"/>
+<xs:element name="s1trbr" type="xs:string" minOccurs="0"/>
+<xs:element name="salarioNumerico" type="xs:long" minOccurs="0"/>
+<xs:element name="sigloPrest" type="xs:string" minOccurs="0"/>
+<xs:element name="strbr" type="xs:string" minOccurs="0"/>
+<xs:element name="sumaSalario" type="xs:decimal" minOccurs="0"/>
+<xs:element name="TFret" type="xs:string" minOccurs="0"/>
+<xs:element name="tfactualcaja" type="xs:string" minOccurs="0"/>
+<xs:element name="tfechafinfideli" type="xs:string" minOccurs="0"/>
+<xs:element name="tfechainifideli" type="xs:string" minOccurs="0"/>
+<xs:element name="tfechgrabanov" type="xs:string" minOccurs="0"/>
+<xs:element name="tfechingcaja" type="xs:string" minOccurs="0"/>
+<xs:element name="tfechretiempre" type="xs:string" minOccurs="0"/>
+<xs:element name="trb1ape" type="xs:string" minOccurs="0"/>
+<xs:element name="trb2ape" type="xs:string" minOccurs="0"/>
+<xs:element name="trbAjusteCr" type="xs:string" minOccurs="0"/>
+<xs:element name="trbAjusteDb" type="xs:string" minOccurs="0"/>
+<xs:element name="trbBarrio" type="xs:string" minOccurs="0"/>
+<xs:element name="trbCiudad" type="xs:string" minOccurs="0"/>
+<xs:element name="trbCodigo" type="xs:string" minOccurs="0"/>
+<xs:element name="trbCuentaTra" type="xs:string" minOccurs="0"/>
+<xs:element name="trbCuota" type="xs:string" minOccurs="0"/>
+<xs:element name="trbCuotasDb" type="xs:string" minOccurs="0"/>
+<xs:element name="trbDireNueva" type="xs:string" minOccurs="0"/>
+<xs:element name="trbDireccion" type="xs:string" minOccurs="0"/>
+<xs:element name="trbDpto" type="xs:string" minOccurs="0"/>
+<xs:element name="trbEdad" type="xs:double" minOccurs="0"/>
+<xs:element name="trbEmpresa" type="xs:string" minOccurs="0"/>
+<xs:element name="trbEsCivil" type="xs:string" minOccurs="0"/>
+<xs:element name="trbEstado" type="xs:string" minOccurs="0"/>
+<xs:element name="trbFechaGraba" type="xs:string" minOccurs="0"/>
+<xs:element name="trbFechaIerSub" type="xs:string" minOccurs="0"/>
+<xs:element name="trbFechaIngresos" type="xs:string" minOccurs="0"/>
+<xs:element name="trbFechaNac" type="xs:string" minOccurs="0"/>
+<xs:element name="trbIdentSub" type="xs:string" minOccurs="0"/>
+<xs:element name="trbIdentificacion" type="xs:string" minOccurs="0"/>
+<xs:element name="trbImprimioCarnet" type="xs:unsignedShort" minOccurs="0"/>
+<xs:element name="trbIndEstado" type="xs:string" minOccurs="0"/>
+<xs:element name="trbIndPlanHosp" type="xs:string" minOccurs="0"/>
+<xs:element name="trbIndRegistro" type="xs:string" minOccurs="0"/>
+<xs:element name="trbIndSubsidio" type="xs:string" minOccurs="0"/>
+<xs:element name="trbLugarNac" type="xs:string" minOccurs="0"/>
+<xs:element name="trbNombre" type="xs:string" minOccurs="0"/>
+<xs:element name="trbNombres" type="xs:string" minOccurs="0"/>
+<xs:element name="trbNovedTra" type="xs:string" minOccurs="0"/>
+<xs:element name="trbNroCuotas" type="xs:string" minOccurs="0"/>
+<xs:element name="trbSalario" type="xs:string" minOccurs="0"/>
+<xs:element name="trbSaldo" type="xs:string" minOccurs="0"/>
+<xs:element name="trbSecHabita" type="xs:string" minOccurs="0"/>
+<xs:element name="trbSector" type="xs:string" minOccurs="0"/>
+<xs:element name="trbServicio" type="xs:string" minOccurs="0"/>
+<xs:element name="trbSexo" type="xs:string" minOccurs="0"/>
+<xs:element name="trbSubsidioEsp" type="xs:string" minOccurs="0"/>
+<xs:element name="trbTeleNuevo" type="xs:string" minOccurs="0"/>
+<xs:element name="trbTelefono" type="xs:string" minOccurs="0"/>
+<xs:element name="trbValorPrest" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStatisticsEmployeeByAge">
+<xs:sequence>
+<xs:element name="nitCompany" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStatisticsEmployeeByAgeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="changePassword">
+<xs:sequence>
+<xs:element name="currentPass" type="xs:string" minOccurs="0"/>
+<xs:element name="newPass1" type="xs:string" minOccurs="0"/>
+<xs:element name="newPass2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="changePasswordResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStatisticsByFovis">
+<xs:sequence>
+<xs:element name="nitCompany" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStatisticsByFovisResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validation">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validationResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStatisticsCategoriesByCompany">
+<xs:sequence>
+<xs:element name="nitCompany" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStatisticsCategoriesByCompanyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDetailStatisticsByFovis">
+<xs:sequence>
+<xs:element name="nitCompany" type="xs:string" minOccurs="0"/>
+<xs:element name="year" type="xs:string" minOccurs="0"/>
+<xs:element name="section" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDetailStatisticsByFovisResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

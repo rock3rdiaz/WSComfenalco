@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+ 
+    <persistence-unit name="WSComfenalcoPUSubsidio" transaction-type="JTA">
+        <jta-data-source>Subsidio</jta-data-source>
+        
+        <properties>
+            <property name="eclipselink.canonicalmodel.subpackage" value="foobar1"/>
+        </properties>
+    </persistence-unit>
+  
+    <persistence-unit name="WSComfenalcoPUMCorporativo" transaction-type="JTA">
+       
+        <!--<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>-->
+        <jta-data-source>MCorporativo</jta-data-source>
+        <properties>
+            <property name="eclipselink.canonicalmodel.subpackage" value="foobar2"/>
+        </properties>
+    </persistence-unit>
+</persistence>
